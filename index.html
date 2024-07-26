@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/O.png" type="image/x-icon">
+    <title> Portfolio</title>
+    <!-- Import du  css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+
+  <header class="fixed-top">
+      <a class="navbar-brand" href="#"><span>P</span>or<span>t</span>fo<span>l</span>io</a>
+      <input type="checkbox" id="nav_check" hidden>
+      <nav>
+          <ul>
+              <li>
+                  <a href="#debut" class="active">Acceuil</a>
+              </li>
+              <li>
+                  <a href="#projet">Projets</a>
+              </li>
+              <li>
+                  <a href="#bts">BTS SIO</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                  <a href="#veille">Veille</a>
+              </li>
+              <li>
+                  <a href="#contact">Contact</a>
+              </li>
+          </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </label>
+  </header>
+
+    <!-- debut sexion -->
+    <section id="debut" class="main py-4">  <!-- py-5 (emplacement pading de haut-bas taille 5)-->
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-6 py-5">
+              <h3><small class="fw-normal">Bonjour, Je suis </small><br>
+                <span id="typed"></span> </h3>
+              <p>Bienvenue sur mon Portfolio</p>
+
+              <a href="#about">Voir Plus...</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- A propos de moi -->
+    <section id="about" class="about py-5">
+      <div class="container py-5">
+        <div class="row">
+          <h1 class="text-center pb-4 "> A propos.  </h1>
+          <p class="py-3 text-center ">Je suis <span class="fw-bold"> Ousmane NDOME,</span> 
+            etudiant actuellement en deuxième année de BTS Services Informatiques aux Organisations (SIO) Option SLAM (Solutions Logicielles et Applications Métiers) à Learning Systems.
+            Cela fait maintenant trois ans que je commence à m'intéresser plus sérieusement aux sciences de l'informatique, notamment la partie développement. Durant mon cursus et à l'aide de mes formations personnelles, j'ai pu aquérir/développer des compétences.</p>
+        
+          <div class="col-lg-5 pt-4">
+            <div class="grid__item">
+              <ul class="list-unstyled">
+                <li>
+                  <h4>Laravel.</h4>
+                  <p>Développement front & back avec lararel</p>
+                </li>
+                <li>
+                  <h4>Wordpress.</h4>
+                  <p>Création de site wordpress</p>
+                </li>
+                <li>
+                  <h4>Django.</h4>
+                  <p>Développement avec Django</p>
+                </li>
+              </ul>
+            </div>          </div>
+          <div class="propos col-lg-7 pt-4 ">  <!-- pt-4 (padding-top de 4) -->
+            
+            <div class="progress">
+              <div class="bar" data-width="80"><span>HTML / CSS</span></div>
+            </div>
+            <div class="progress my-3">
+              <div class="bar" data-width="60"><span>JAVASCRIPT / JQUERY</span></div>
+            </div>
+            <div class="progress">
+              <div class="bar" data-width="65"><span>BOOTSTRAP</span></div>
+            </div>
+            <div class="progress my-3">
+              <div class="bar" data-width="70"><span>PHP / SQL</span></div>
+            </div>
+            <div class="progress">
+              <div class="bar" data-width="60"><span>PYTHON</span></div>
+            </div>
+            <div class="progress my-3">
+              <div class="bar" data-width="70"><span>JAVA</span></div>
+            </div>
+            <a href="doc/CV Recherche alternance.pdf" target="_blank"><input type="button" class="btn1 mt-5" value="MON CV"></a>
+            <input type="button" class="btn2 mt-5" id="btn-contact" value="CONTACT">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projet" class="projets py-4 ">
+      <div class="container py-4">
+        <h1 class="text-center">Projets.</h1>
+        <div class="ligne py-4">
+          <h4 class="text-center">1ère année.</h4>
+        </div>
+        <div class="card-container py-4">
+          <div class="card">
+            <img src="image/TeamViewer.jpg" class="card-img-top" alt="wordpress">
+            <div class="card-content">
+              <h5 class="card-title">TeamViewer </h5>
+                <p class="card-text">Dans ce tp j'ai pu apprendre à contrôler un PC et j’ai eu accès aux
+                  informations dont les informations de base, les informations sur le processeur 
+                  et mémoire etc... </p>
+                <a href="doc/RAPPORT_TeamViewr.pdf" class="btn btn-primary">Documentation</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/jira.jpg" class="card-img-top" alt="wordpress">
+            <div class="card-content">
+              <h5 class="card-title">Jira </h5>
+                <p class="card-text">Jira est un système de suivi de bugs, de gestion des incidents et de gestion de projets. Dans ce projet j'ai pu apprendre à gerer des incidents.</p>
+                <a href="doc/RAPPORT_JIRA.pdf" class="btn btn-primary">Documentation</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/OS.jpg" class="card-img-top" alt="wordpress">
+            <div class="card-content">
+              <h5 class="card-title">Manipulation OS </h5>
+                <p class="card-text"><br> Dans ce tp j'ai pu apprendre à manipuler le système d'explotation ubuntu à l'aide d'une machine virtuelle .</p>
+                <br><a href="doc/Manipulation_Lunix.pdf" class="btn btn-primary">Documentation</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="ligne">
+          <h4 class="text-center">2ème année.</h4>
+        </div>
+        <div class="card-container pt-4">
+          <div class="card">
+            <img src="image/woocommerce.PNG" class="card-img-top" alt="wordpress">
+            <div class="card-content">
+              <h5 class="card-title">Site de vente </h5>
+                <p class="card-text">Dans ce tp j'ai pu apprendre à développer un site de vente via wordpress avec l'extension woocommerce.</p>
+                <p><strong>Outils : </strong>XAMPP, Wordpress, Woocommerce</p>
+                <p><strong>Langages : </strong>...</p>
+                <a href="doc/Rapport woocommerce.pdf" class="btn btn-primary">Documentation</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/accueil.PNG" class="card-img-top" alt="laravel">
+            <div class="card-content">
+              <h5 class="card-title"> Site e-commerce "LamicoShop</h5>
+                <p class="card-text">Durant ce projet j'ai développé un site e-commerce avec le framework <strong>Laravel</strong>.</p>
+                <p><strong>Outils : </strong>VS code, Laragon, phpMyadmin</p>
+                <p><strong>Langages : </strong>HTML, CSS, JAVASCRIPT, PHP</p>
+                <p class="pt-2"></p><br>
+                <a href="https://github.com/ouzmane1/LaravelSite.git" class="btn btn-primary">Production</a>
+                <a href="doc/Rapport LAMICOShop.pdf" class="btn btn-primary">Documentation</a>
+                <p class="pt2"></p>
+                <!-- <a href="#" class="btn btn-primary">Vers le site</a> -->
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/appli.PNG" class="card-img-top" alt="wordpress">
+            <div class="card-content">
+              <h5 class="card-title">Developpement application</h5>
+                <p class="card-text">Dans ce projet j'ai développé une application mobile  avec <strong>Android studio</strong> qui communique avec la base donnée de Odoo.</p>
+                <p><strong>Outils : </strong>Android studio</p>
+                <p><strong>Langages : </strong>JAVA, XML</p>
+                <a href="doc/Rapport MyPli.pdf" class="btn btn-primary">Documentation</a>
+                <a href="https://github.com/ouzmane1/AppliAndroid.git" class="btn btn-primary">Production</a>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h5 class="card-title">Mini projet lampe</h5>
+                <p class="card-text">Durant ma formation en JavaScript j'ai pu réaliser ce mini projet <strong>Lampe</strong>.</p>
+                <a href="doc/Rapport lampe.pdf" class="btn btn-primary">Documentation</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="tabl">
+          <div class="row py-3">
+            <div class="col-lg py-3">
+              <h3>Tableau de synthèse</h3>
+              <p>Le tableau de synthèse des réalisations professionnelles (parfois appelé "fiche d'activités professionnelles") est un document qui décrit les principales réalisations professionnelles que les étudiants doivent être capables de démontrer lors de l'épreuve E4.
+                C'est un tableau au format A3 regroupant mes missions réalisées en formation, ainsi que mes missions réalisées en entreprise,
+                qui sont susceptibles de servir de preuves de connaissance et compétences.
+                Vous trouverez ci dessous mon tableau de synthèse</p>
+                <a href="doc/Tableau de synthèse.pdf" target="_blank" class="btn">Consulter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BTS -->
+    <section id="bts" class="BTS py-4">
+      <div class="container pt-4">
+        <h1 class="text-center">Bts sio.</h1>
+        
+        <div class="row py-4">
+          <h4 class="">C'est quoi le BTS SIO(Services Informatiques aux Organisations)?</h4>
+          <!-- <div class="col-lg-6 py-4 ">
+            <img src="image/R.jpg" alt="">
+          </div> -->
+          <div class="def col-lg-12 py-2">
+            
+            <p>Reconnu par l’État, le BTS SIO a remplacé depuis 2011 le BTS IG (Informatique et gestion). 
+              Cette nouvelle formule entend s’adapter aux besoins constatés sur le marché du travail de profils qualifiés en TIC (Technologies d’Information Communication). 
+              Pour remplir cet objectif particulier, elle s’est déclinée en deux spécialités distinctes : BTS SIO SISR et BTS SIO SLAM. Celles-ci comportent des modules techniques en liaison avec l’informatique, et d’autres de culture générale et de management. 
+              Elles proposent également des périodes de stages en entreprise d’une durée de 10 à 11 semaines, 
+              afin d’initier les étudiants aux réalités du domaine professionnel et de parfaire leur employabilité.</p>
+          </div>
+        </div>
+        <div class="options row py-4">
+          <h3 class="text-center">Le BTS SIO se compose de deux options distinctes :</h3>
+          <div class="slam-sisr col-lg-6 py-4">
+            <img src="image/programming.jpg" alt="image slam">
+            <h4>SLAM (<span>Solutions Logicielles et Applications Métiers</span>) </h4>
+            <p>Cette option met l'accent sur le développement de logiciels et d'applications métiers. Les étudiants apprennent à concevoir, développer et déployer des applications informatiques répondant aux besoins spécifiques des organisations. Ils acquièrent des compétences en programmation, en développement web, en bases de données, en gestion de projet et en conception d'interfaces utilisateur.</p>
+            <p>Un diplômé de l'option SLAM (Solutions Logicielles et Applications Métiers) du BTS SIO peut prétendre à différents métiers dans le domaine du développement de logiciels et d'applications métiers. Voici quelques exemples de métiers auxquels il peut accéder :</p>
+            <ul>
+              <li>Développeur d'applications</li>
+              <li>Développeur web</li>
+              <li>Analyste-programmeur </li>
+              <li>Consultant en solutions métiers</li>
+            </ul>
+          </div>
+          <div class="slam-sisr col-lg-6 py-4">
+            <img src="image/services-communications-networking.jpg" alt="image sisr">
+            <h4>SISR ( <span> Solutions d'Infrastructure, Systèmes et Réseaux</span>)</h4>
+            <p>Cette option met l'accent sur l'administration des systèmes informatiques et des réseaux. Les étudiants apprennent à installer, configurer et maintenir les infrastructures informatiques des entreprises. Ils acquièrent des compétences en matière de gestion des serveurs, des réseaux locaux et étendus, de sécurité informatique, de virtualisation, de stockage des données, et de support technique.</p>
+            <p>Un diplômé de l'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) du BTS SIO peut prétendre à divers métiers dans le domaine de l'administration des systèmes informatiques et des réseaux. Voici quelques exemples de métiers auxquels il peut accéder :</p>
+            <ul>
+              <li>Administrateur système</li>
+              <li>Administrateur réseau</li>
+              <li>Technicien support informatique</li>
+              <li>Ingénieur système et réseau</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section id="experience" class="experience">
+      <div class="container py-4">
+        <h1 class="text-center">Experience.</h1>
+        <div class=" row py-4">
+          <h4 class="py-4">Stage </h4>
+          <div class="col-lg-3">
+            <img class="w-100" src="image/Innovative-Labs.jpg" alt="">
+          </div>
+          <div class="col-lg-8">
+            <h5>INNOVATIVE LABS</h5>
+            <p>Innovative Labs est une société de recherche et développement créée en 2023.
+              C’est une SAS qui réalise des projets de recherche et de développement en informatique.
+              Actuellement, Innovative Labs sur 3 volets : Le développement d’extensions pour les ERPs, Le développement de jeux 2D et 3D, notamment des jeux du style Serious Games et des jeux en réseau et Le développement d’applications intelligentes qui utilisent les agents
+              conversationnels (chatbots) intelligents comme ChatGPT et Google Gemini.</p>
+              <a href="doc/Présentation Innovative Labs.pdf" class="btn btn-primary">Voir Plus</a>
+          </div>
+        </div>
+        <div class="row py-4">
+          <h4 class="py-4">Alternance</h4>
+          <div class="col-lg-3 ">
+            <img class="w-100" src="image/ISBE.jpg" alt="">
+          </div>
+          <div class="col-lg-8">
+            <h5>Learning Systems <br> International School of Business and Engineering</h5>
+            <p>Learning Systems est un cfa fondé en 2023. Dirigé par le Directeur Monsieur Zied Loukil <br> Learning system étant un nouveau cerfa vise à satisfaire l'expérience de leur étudiants, mais aussi des enseignants et le reste des employés. Au sein de cette société, j'ai eu à gérer tout d'abord les taches quotidiennes que l'on rencontre dans les écoles de ce type telles que répondre aux demandes d'assistance technique des utilisateurs, fournir aux étudiants l'ensemble des informations liées à leur formation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- veille technologique -->
+     <section id="veille" class="veille py-4">
+      <div class="container py-4">
+        <h1 class="text-center">Veille Technologique.</h1>
+        <div class="row py-4">
+         
+          <div class="col-lg">
+            <p>La veille technologique consiste à s'informer en continu sur les nouveautés du secteur informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but d'être le meilleur dans son domaine. Le thème de veille technologique que j'ai décidé d'aborder s'intitule <span>La Blockchain</span>.</p>
+            <p>En effet la veille permet de :</p>
+            <ul>
+              <li>Suivre les évolutions techniques</li>
+              <li>Dégager de nouveaux procédés ou matériaux de substitution</li>
+              <li>Identifier les meilleures pratiques</li>
+              <li>Augmenter nos compétences</li>
+              <li>Eviter de prendre des décisions sur des informations obsolètes</li>
+            </ul>
+            <p>Voici les outils qu'il est possible d'utilisés pour une veille :</p>
+            <ul>
+              <li>Les flux RSS</li>
+              <li>Les réseaux sociaux comme Twitter, Facebook...</li>
+              <li>Google Alert</li>
+              <li>Les sites d’actualités (pour l’informatique: Developpez.net, 01net, lemondeinformatique.fr)</li>
+              <li>Les sites spécialisés</li>
+              <li>Conférences etc.</li>
+            </ul>
+            
+           <div class="row maveille">
+            <div class="col-lg-5"></div>
+            <a href="veille.html">
+            <img class="w-50" src="image/veille-technologique.jpg" alt="..."> <h4>Ma veille technologique</h4></a>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- veille Technologique -->
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact py-4">
+      <div class="container py-4">
+        <h1 class="text-center">Contact.</h1>
+        <form action="" method="post">
+          <div class="row pt-4">
+            <div class="col-md-6 mb-3">
+              <label for="nom" class="form-label">Nom :</label>
+              <input type="text" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="prenom" class="form-label">Prenom :</label>
+              <input type="text" class="form-control" id="prenom" placeholder="Prenom">
+            </div> 
+          </div>
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          <div class="form-group py-4 mb-3">
+            <label for="message" class="form-label">Message :</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary " value="Envoyer">
+        </div>
+        </form>  
+      </div>
+    </section>
+    
+
+
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div class="grid__item">
+            <p>© 2022 - 2024 Portfolio-Ousmane NDOME</p>
+          </div>
+          <div class="sociales">
+            <ul>
+              <li>
+                <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ousmane-ndome-655984258/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ouz_menn?igsh=MW8wYTVwY3E0M2gydg%3D%3D&utm_source=qr  ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Import des fichiers js-->
+    <script src="js/jquery-3.7.1.js"></script>  <!-- L'import de jquery en premier prsk certains fichiers on besoins de lui-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Typed -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

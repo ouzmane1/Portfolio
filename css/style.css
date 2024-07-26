@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald&display=swap');
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 237, 237);
+} */
+/* .navbar{
+    display: none;
+    background-color: #fff;
+}
+#navbarNav{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-link{
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 600;  
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: "Chakra Petch", sans-serif;
+}
+.nav-link:hover{
+    color: #fff;
+    background-color: #00ABE4;
+}
+.navbar-brand{
+    padding: 0;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+}
+.navbar-brand span{
+    color: #00ABE4;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* list-style: none; */
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgb(236, 237, 237); */
+    background: #ffff;
+}
+header {
+    background: #ffff;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    list-style: none;
+}
+
+header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    
+}
+header .navbar-brand{
+    padding: 0;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+}
+header a span{
+    color: #00ABE4;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #000;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;  
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+header nav ul li a:hover, header nav ul li a .active{
+    color: #00ABE4;
+    border-bottom-color: dodgerblue;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+@media only screen and (max-width: 900px) {  /*si l'ecran est < a   900px on applique*/
+    header {
+        padding: 0 30px;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 40px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+
+/* Section main */
+
+.main{
+    background:url("../image/IMG_3846.jpg") no-repeat ;
+    /* background-color: rgba(255, 255, 255, 0.14);  */
+    background-position: right 35% bottom 45%;
+    background-size: cover;  
+    width: 100%;
+    height: 100vh;  
+
+}
+
+.main h3{
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: "Chakra Petch", sans-serif;
+}
+.main h3 span{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Chakra Petch", sans-serif;
+    color: #00ABE4;
+}
+.main p{
+    padding-top: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1;  /* cree une ligne*/
+    /* border-bottom: 3px solid #00ABE4;  /*visibilite de la ligne*/
+    /* width: 60%; */ 
+}
+.main a{
+    color: #000;
+    text-decoration: none;
+}
+.main a:hover{
+    color: #00ABE4;
+}
+@media screen and (max-width: 1200px) {
+    .main h3{
+        font-size: 2.8rem;
+    }
+    .main h3 span{
+        font-size: 3rem;
+    }
+    .main p{
+        font-size: 1rem;
+        
+        
+    }
+
+}
+@media screen and (max-width: 749px) {
+
+    .main h3{
+        font-size: 2rem;
+    }
+    .main h3 span{
+        font-size: 2.5rem;
+    }
+    .main p{
+        font-size: 1rem;
+        line-height: 1;
+        width: 50%;
+        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+}
+
+/* ABOUT */
+
+.about{
+    background: #f0f0f0;
+}
+.about p{
+    font-size: 1.1rem;
+}
+
+.about .propos{
+    padding-left: 40px;
+}
+.about h4{
+    font-size: 1.1rem;
+}
+
+.about h4, .about p {
+    margin:0 0 0.3rem 0;
+  }
+  
+.about li {
+    background-color: #ffffff;
+    border-left:3px solid #00ABE4;
+    padding:.9rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.propos .progress{
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px -59px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 14px -59px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 14px -59px rgba(0,0,0,0.45);
+    border-radius: 10px;
+    height: 38px;
+    width: 100%;
+}
+.propos .progress .bar {
+    background: #00ABE4;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 450;
+}
+.propos .progress span{
+    color: #fff;
+}
+
+.btn1{
+    height: 35px;
+    width: 110px;
+    color: #fff;
+    background-color: #00ABE4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background: #bebebe;
+    color: #000;
+    border: 1px solid #e0e1e1;
+    transition: 0.5s;
+}
+
+.btn2{
+    height: 35px;
+    width: 110px;
+    background-color: #f2f2f2;
+    border: 1px solid #00ABE4;
+    outline: none;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background: #00ABE4;
+    color: #fff;
+    border: 1px solid #e0e1e1;
+    transition: 0.5s;
+}
+@media screen and (max-width:749px) {
+    
+    
+}
+
+/* Projets */
+
+.projets h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 5px 5px 18px -3px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 5px 5px 18px -3px rgba(0,0,0,0.69);
+    -moz-box-shadow: 5px 5px 18px -3px rgba(0,0,0,0.69);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card .btn{
+    background: #00ABE4;
+}
+.card .btn:hover{
+    background: #bebebe;
+    color: #000;
+    border: 1px solid #e0e1e1;
+    transition: 0.5s;
+}
+.card img{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:749px) {
+    .pro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+.tabl .btn{   
+    height: 35px;
+    width: 130px;
+    color: #fff;
+    background-color: #00ABE4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.tabl .btn:hover{
+    background: #bebebe;
+    color: #000;
+    border: 1px solid #e0e1e1;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 749px) {
+    .tabl{
+        text-align: center;
+      
+    }
+    
+}
+
+/* bts */
+.BTS{
+    background: #f0f0f0;
+}
+
+.BTS h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.BTS img{
+    width: 450px;
+    height: 250px;
+}
+
+
+.BTS .options{
+    padding-top: 2rem;
+}
+.BTS .options h3{
+    padding-bottom: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+    text-decoration: underline;
+}
+.BTS .options h4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+    text-decoration: underline;
+}
+.BTS .options h4 span{
+    font-size: 1.3rem;
+}
+
+.BTS .options p{
+    padding: 5px;
+}
+.BTS .options ul{
+    text-decoration: underline;
+    padding-left: 0;
+    padding: 10px;
+    
+}
+
+.BTS .options .slam-sisr img{
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 749px) {
+    .BTS{
+        text-align: center;
+    }
+    .BTS .def p,.leBtsSio{
+        padding-left: 0;
+    }
+    .BTS img{
+        padding-bottom: 1rem;
+    }
+}
+
+/* Parcours */
+
+
+.experience h1,h4{
+    font-family: "Chakra Petch", sans-serif;
+    
+}
+
+
+/* veille */
+.veille h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Chakra Petch", sans-serif;
+}
+.veille a{
+    color: #0f0f0f;
+    text-decoration: none;
+}
+.veille a:hover{
+    text-decoration:underline;
+}
+
+@media screen and (max-width:749px) {
+    .veille{
+        text-align: center;
+    }
+    
+}
+.veille span{
+    color: #00ABE4;
+}
+.veille .maveille a{
+    text-decoration: none;
+    
+}
+.veille .maveille a:hover{
+    
+    color: #00ABE4;
+    
+}
+.veille .maveille img{
+    transition: transform 0.5s;
+}
+.veille .maveille img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* form */
+.contact h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Chakra Petch", sans-serif;
+}
+.contact .btn{   
+    height: 35px;
+    width: 130px;
+    color: #fff;
+    background-color: #00ABE4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    }
+.contact .btn:hover{
+    background: #bebebe;
+    color: #000;
+    border: 1px solid #e0e1e1;
+    transition: 0.5s;
+}
+form{
+    max-width: 900px;
+    margin: 4rem auto 0 auto;
+}
+
+@media screen and (max-width:749px) {
+    
+    
+}
+
+
+/* footer */
+footer {
+    background: #eceaea;
+    color: rgba(0, 0, 0, 0.688);
+    font-family: "Chakra Petch", sans-serif;
+    padding: 3rem;
+
+}
+footer .grid {
+    display: block;    
+    
+}
+footer .sociales{
+    text-align: center;
+}
+
+footer .grid__item{
+    text-align: center;
+}
+
+footer .sociales li{
+    display: inline;
+    margin: 10px;
+    
+}
+footer .sociales li svg{
+    color: rgba(0, 0, 0, 0.643);
+    border-radius: 5px;
+
+}
+footer .sociales li svg:hover{
+    color: #00ABE4;
+    border: 1px solid #e0e1e1;
+    transition: 0.5;
+}
+
+
+  
+
+  
+
+
+  
+ 
+
